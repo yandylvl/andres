@@ -112,8 +112,8 @@ h3 {
   opacity: 1;
   border-radius: 50%;
   border: 5px solid rgba(80, 92, 200, 0.7);
-  top: -18px;
-  left: -18px;
+  top: -13px;
+  left: -13px;
   background: rgba(198, 16, 0, 0);
 }
 .au-play-btn:hover::before {
