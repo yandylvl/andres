@@ -12,6 +12,59 @@
   </head>
 
   <body>
+    <header>
+      <!-- este es el componente del nav -->
+      <nav class="nav-menu">
+        <div class="submenu">
+          <a href>
+            <span class="lang">ES</span>
+          </a>
+          <!-- agregarle y quitarle la clase "visible" es lo q hace q se muestre o se esconda -->
+          <div class="submenu_list visible">
+            <!-- aqui tienes q usar un icono de "cerrar" q sea del mismo paquetes de iconos q estan usando en el resto de la app -->
+            <span class="icon-cerrar">X</span>
+
+            <ul class="lang-ul">
+              <li>
+                <span class="flag-icon">
+                  <img
+                    class="selected"
+                    src="https://assets.chagodtour.com/static/img/flags/en.svg"
+                    title="Inglés"
+                    alt="Inglés"
+                  />
+                </span>
+              </li>
+
+              <li>
+                <span class="flag-icon">
+                  <img
+                    src="https://assets.chagodtour.com/static/img/flags/es.svg"
+                    title="Español"
+                    alt="Español"
+                  />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="submenu">
+          <a href>
+            <!-- aqui tienes q usar un icono de "user" q sea del mismo paquetes de iconos q estan usando en el resto de la app -->
+            <span class="user-icon">I</span>
+          </a>
+          <!-- agregarle y quitarle la clase "visible" es lo q hace q se muestre o se esconda -->
+          <div class="submenu_list">
+            <ul class="user-options">
+              <li><a href="/en/login/">Login</a></li>
+              <li><a href="/en/sign-up/">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <section>
         <div class="container">

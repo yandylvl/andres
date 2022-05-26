@@ -237,3 +237,147 @@ h3 {
     opacity: 0;
   }
 }
+
+/* ------NAV-------- */
+/* hay q ajustar unas cositas cuando se usen los icono correctos y demas */
+
+/* esto es para q el header no llegue hasta los bordes pero en tu app no hace falta porq ya tiene dado estilos aqui */
+header {
+  max-width: 85%;
+}
+
+.nav-menu {
+  float: right;
+}
+
+.submenu {
+  margin-left: 5px;
+  position: relative;
+  float: left;
+  display: grid;
+  cursor: pointer;
+  align-items: center;
+}
+
+.lang,
+.user-icon {
+  line-height: 0.8;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+  padding: 10px;
+  color: #1a1a1a;
+}
+
+.submenu a {
+  text-decoration: none;
+}
+
+.submenu a:hover,
+.submenu a:focus {
+  color: #ff8519;
+}
+
+.submenu_list {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 30px rgb(127 137 161 / 25%);
+  transition: ease all 0.3s;
+  cursor: context-menu;
+  padding: 10px;
+  top: calc(100% - 10px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.submenu_list.visible {
+  opacity: 1;
+  top: calc(100% + 10px);
+  visibility: visible;
+}
+
+.submenu_list::before {
+  top: -20px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #fff;
+  border-width: 10px;
+  margin-left: -10px;
+  z-index: 99;
+}
+
+.lang-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+}
+
+.lang-ul li {
+  display: inline-block;
+  padding: 15px;
+  line-height: 1;
+}
+
+.icon-cerrar {
+  margin-left: calc(100% - 25px);
+  font-size: 0.7rem;
+  color: #1a1a1a;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.flag-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.flag-icon img {
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
+
+.flag-icon img.selected {
+  border: 3px solid #ff8519;
+  padding: 2px;
+}
+
+/* user */
+
+.user-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-options li {
+  min-width: 180px;
+}
+
+.user-options a {
+  line-height: 0.8;
+  font-size: 14px;
+  display: block;
+  position: relative;
+  color: #1a1a1a;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
